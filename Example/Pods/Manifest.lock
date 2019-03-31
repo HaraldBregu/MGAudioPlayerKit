@@ -1,0 +1,45 @@
+PODS:
+  - FontBlaster (4.1.0)
+  - MGAudioPlayerKit (0.1.0):
+    - MGTemplateKit
+    - SDWebImage
+  - MGTemplateKit (0.1.8):
+    - FontBlaster
+    - UIColor_Hex_Swift (~> 4.2.0)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - UIColor_Hex_Swift (4.2.0)
+
+DEPENDENCIES:
+  - MGAudioPlayerKit (from `../`)
+  - "MGTemplateKit (from `https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git`)"
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FontBlaster
+    - SDWebImage
+    - UIColor_Hex_Swift
+
+EXTERNAL SOURCES:
+  MGAudioPlayerKit:
+    :path: "../"
+  MGTemplateKit:
+    :git: "https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git"
+
+CHECKOUT OPTIONS:
+  MGTemplateKit:
+    :commit: 714d770728041650e79f3dac73dca2699cd2cb6d
+    :git: "https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git"
+
+SPEC CHECKSUMS:
+  FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
+  MGAudioPlayerKit: cc850b48c646fc2e612150c0dc39ee1536fc8689
+  MGTemplateKit: 59eb00bb69ae7c313203351de312fab4894040d9
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  UIColor_Hex_Swift: bc07fc197421ee896b9ed6dcfa2054b7fbf75145
+
+PODFILE CHECKSUM: f7420b0350bd5081cc2aa0776ced9eadea2f8eb5
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,6 @@
+framework module Pods_MGAudioPlayerKit_Example {
+  umbrella header "Pods-MGAudioPlayerKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

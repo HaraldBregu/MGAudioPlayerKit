@@ -2,10 +2,5 @@ use_frameworks!
 
 target 'MGAudioPlayerKit_Example' do
   pod 'MGAudioPlayerKit', :path => '../'
-
-  target 'MGAudioPlayerKit_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  pod 'SDWebImage'
 end
