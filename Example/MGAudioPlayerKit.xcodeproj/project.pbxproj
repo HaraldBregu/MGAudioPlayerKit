@@ -8,25 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		6EB2FD2ED5ED153D65CDB7CA /* Pods_MGAudioPlayerKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68A2E3B99D431CB587DFD01 /* Pods_MGAudioPlayerKit_Example.framework */; };
+		A91A35C722733801003AD425 /* linkinparknumb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91A35BD227337FC003AD425 /* linkinparknumb.mp3 */; };
+		A91A35C822733801003AD425 /* aviciiwakemeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91A35BE227337FC003AD425 /* aviciiwakemeup.mp3 */; };
+		A91A35C922733801003AD425 /* zombiebadwolves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91A35BF227337FD003AD425 /* zombiebadwolves.mp3 */; };
+		A91A35CA22733801003AD425 /* badliar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91A35C0227337FD003AD425 /* badliar.mp3 */; };
+		A91A35CB22733801003AD425 /* shoottothrill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91A35C1227337FE003AD425 /* shoottothrill.mp3 */; };
+		A91A35CC22733801003AD425 /* twentyonepilots.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91A35C2227337FE003AD425 /* twentyonepilots.mp3 */; };
+		A91A35CD22733801003AD425 /* aviciilevels.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91A35C3227337FF003AD425 /* aviciilevels.mp3 */; };
+		A91A35CE22733801003AD425 /* pinktry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91A35C4227337FF003AD425 /* pinktry.mp3 */; };
+		A91A35CF22733801003AD425 /* therainsofcastamere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91A35C522733800003AD425 /* therainsofcastamere.mp3 */; };
+		A91A35D022733801003AD425 /* thunderstruck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91A35C622733800003AD425 /* thunderstruck.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		607FACD01AFB9204008FA782 /* MGAudioPlayerKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGAudioPlayerKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6C24203641749DF53B23EECF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A2ACC3CCA3A638E5F7409843 /* Pods-MGAudioPlayerKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGAudioPlayerKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-MGAudioPlayerKit_Example/Pods-MGAudioPlayerKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A91A35BD227337FC003AD425 /* linkinparknumb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = linkinparknumb.mp3; sourceTree = "<group>"; };
+		A91A35BE227337FC003AD425 /* aviciiwakemeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aviciiwakemeup.mp3; sourceTree = "<group>"; };
+		A91A35BF227337FD003AD425 /* zombiebadwolves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zombiebadwolves.mp3; sourceTree = "<group>"; };
+		A91A35C0227337FD003AD425 /* badliar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = badliar.mp3; sourceTree = "<group>"; };
+		A91A35C1227337FE003AD425 /* shoottothrill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shoottothrill.mp3; sourceTree = "<group>"; };
+		A91A35C2227337FE003AD425 /* twentyonepilots.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = twentyonepilots.mp3; sourceTree = "<group>"; };
+		A91A35C3227337FF003AD425 /* aviciilevels.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aviciilevels.mp3; sourceTree = "<group>"; };
+		A91A35C4227337FF003AD425 /* pinktry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pinktry.mp3; sourceTree = "<group>"; };
+		A91A35C522733800003AD425 /* therainsofcastamere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = therainsofcastamere.mp3; sourceTree = "<group>"; };
+		A91A35C622733800003AD425 /* thunderstruck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thunderstruck.mp3; sourceTree = "<group>"; };
 		BBEBEA256B079BE8B87809D3 /* Pods-MGAudioPlayerKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGAudioPlayerKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MGAudioPlayerKit_Tests/Pods-MGAudioPlayerKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEF3B9D47E37A804AFE7975B /* Pods-MGAudioPlayerKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGAudioPlayerKit_Example.release.xcconfig"; path = "Target Support Files/Pods-MGAudioPlayerKit_Example/Pods-MGAudioPlayerKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E3D2FD2C87BB8FDBED8A5604 /* MGAudioPlayerKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MGAudioPlayerKit.podspec; path = ../MGAudioPlayerKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -72,8 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				A91A35A822733776003AD425 /* Files */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -128,6 +143,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A91A35A822733776003AD425 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				A91A35C3227337FF003AD425 /* aviciilevels.mp3 */,
+				A91A35BE227337FC003AD425 /* aviciiwakemeup.mp3 */,
+				A91A35C0227337FD003AD425 /* badliar.mp3 */,
+				A91A35BD227337FC003AD425 /* linkinparknumb.mp3 */,
+				A91A35C4227337FF003AD425 /* pinktry.mp3 */,
+				A91A35C1227337FE003AD425 /* shoottothrill.mp3 */,
+				A91A35C522733800003AD425 /* therainsofcastamere.mp3 */,
+				A91A35C622733800003AD425 /* thunderstruck.mp3 */,
+				A91A35C2227337FE003AD425 /* twentyonepilots.mp3 */,
+				A91A35BF227337FD003AD425 /* zombiebadwolves.mp3 */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
 		BD2985AB4E1C121511CECD61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +203,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = GCF6L5J37K;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -180,6 +213,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -198,8 +232,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				A91A35C822733801003AD425 /* aviciiwakemeup.mp3 in Resources */,
+				A91A35CF22733801003AD425 /* therainsofcastamere.mp3 in Resources */,
+				A91A35CC22733801003AD425 /* twentyonepilots.mp3 in Resources */,
+				A91A35CE22733801003AD425 /* pinktry.mp3 in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				A91A35CB22733801003AD425 /* shoottothrill.mp3 in Resources */,
+				A91A35C722733801003AD425 /* linkinparknumb.mp3 in Resources */,
+				A91A35C922733801003AD425 /* zombiebadwolves.mp3 in Resources */,
+				A91A35CD22733801003AD425 /* aviciilevels.mp3 in Resources */,
+				A91A35D022733801003AD425 /* thunderstruck.mp3 in Resources */,
+				A91A35CA22733801003AD425 /* badliar.mp3 in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,14 +316,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -397,6 +431,7 @@
 			baseConfigurationReference = A2ACC3CCA3A638E5F7409843 /* Pods-MGAudioPlayerKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GCF6L5J37K;
 				INFOPLIST_FILE = MGAudioPlayerKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -413,6 +448,7 @@
 			baseConfigurationReference = CEF3B9D47E37A804AFE7975B /* Pods-MGAudioPlayerKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GCF6L5J37K;
 				INFOPLIST_FILE = MGAudioPlayerKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
