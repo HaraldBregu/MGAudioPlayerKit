@@ -84,7 +84,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MGAudioPlayerControllerDe
             data: AudioPlayerData(
                 items: AudioData.items,
                 darkKeyboard: true,
-                bundle: .main))
+                bundle: .main,
+                enableAds: true,
+                adsUnitId: ""))
 
         window?.rootViewController = UINavigationController(rootViewController: audioPlayerController)
         window?.makeKeyAndVisible()
@@ -216,6 +218,8 @@ struct AudioPlayerData: MGAudioPlayerData {
     var items: [MGAudioPlayerItem]?
     var darkKeyboard: Bool
     var bundle: Bundle
+    var enableAds: Bool
+    var adsUnitId: String
 }
 
 public class AudioData {

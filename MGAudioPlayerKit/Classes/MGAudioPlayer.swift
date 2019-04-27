@@ -97,6 +97,8 @@ public protocol MGAudioPlayerData {
     var items: [MGAudioPlayerItem]? { get set }
     var darkKeyboard: Bool { get set }
     var bundle: Bundle { get }
+    var enableAds: Bool { get set }
+    var adsUnitId: String { get set }
 }
 
 public class MGAudioPlayerItem {
