@@ -1,6 +1,6 @@
 {
   "name": "MGAudioPlayerKit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "When you sit down to work, external critics aren’t",
   "description": "When you sit down to work, external critics aren’t the enemy. It’s you who you must to fight against to do great fucking work. You must overcome yourself. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the fucking possibility of failure.",
   "homepage": "https://github.com/HaraldBregu",
@@ -12,7 +12,8 @@
     "Harald Bregu": "harald.bregu@gmail.com"
   },
   "source": {
-    "git": "https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git"
+    "git": "https://github.com/HaraldBregu/MGAudioPlayerKit.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "12.0"
@@ -25,11 +26,18 @@
   },
   "dependencies": {
     "SDWebImage": [
+      "~> 4.0"
+    ],
+    "SnapKit": [
+      "~> 4.0.0"
+    ],
+    "Firebase/Core": [
 
     ],
-    "MGTemplateKit": [
+    "Firebase/AdMob": [
 
     ]
   },
+  "static_framework": true,
   "swift_version": "4.2"
 }
