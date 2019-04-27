@@ -15,5 +15,9 @@ Pod::Spec.new do |s|
       'MGAudioPlayerKit' => ['MGAudioPlayerKit/Assets/*.{png,lproj,storyboard}']
   }
   s.dependency 'SDWebImage', '~> 4.0'
+  s.dependency 'SnapKit', '~> 4.0.0'
+  s.static_framework = true
+  s.dependency 'Firebase/Core'
+  s.dependency 'Firebase/AdMob'
   s.swift_version = '4.2'
 end
