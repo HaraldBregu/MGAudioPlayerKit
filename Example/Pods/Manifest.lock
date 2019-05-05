@@ -23,6 +23,7 @@ PODS:
     - FirebaseCore (~> 5.2)
     - GoogleUtilities/Environment (~> 5.2)
     - GoogleUtilities/UserDefaults (~> 5.2)
+  - FontBlaster (4.1.0)
   - Google-Mobile-Ads-SDK (7.43.0):
     - GoogleAppMeasurement (~> 5.7)
   - GoogleAppMeasurement (5.8.1):
@@ -49,11 +50,14 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.8.0):
     - GoogleUtilities/Logger
-  - MGAudioPlayerKit (0.1.1):
+  - MGAudioPlayerKit (0.1.3):
     - Firebase/AdMob
     - Firebase/Core
     - SDWebImage (~> 4.0)
     - SnapKit (~> 4.0.0)
+  - MGTemplateKit (0.2.0):
+    - FontBlaster
+    - UIColor_Hex_Swift (~> 4.2.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -63,9 +67,11 @@ PODS:
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
   - SnapKit (4.0.1)
+  - UIColor_Hex_Swift (4.2.0)
 
 DEPENDENCIES:
   - MGAudioPlayerKit (from `../`)
+  - "MGTemplateKit (from `https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git`)"
   - SDWebImage
 
 SPEC REPOS:
@@ -74,30 +80,42 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseInstanceID
+    - FontBlaster
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
     - SDWebImage
     - SnapKit
+    - UIColor_Hex_Swift
 
 EXTERNAL SOURCES:
   MGAudioPlayerKit:
     :path: "../"
+  MGTemplateKit:
+    :git: "https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git"
+
+CHECKOUT OPTIONS:
+  MGTemplateKit:
+    :commit: f47404df4d8b6c1ab8b5d73e5a11afd66fddad6c
+    :git: "https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git"
 
 SPEC CHECKSUMS:
   Firebase: 0c8cf33f266410c61ab3e2265cfa412200351d9c
   FirebaseAnalytics: ece1aa57a4f43c64d53a648b5a5e05151aae947b
   FirebaseCore: f1a9a8be1aee4bf71a2fc0f4096df6788bdfda61
   FirebaseInstanceID: a122b0c258720cf250551bb2bedf48c699f80d90
+  FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
   Google-Mobile-Ads-SDK: e911f5544fc6488f8372a183627a802c8bdb5e36
   GoogleAppMeasurement: ffe513e90551844a739e7bcbb1d2aca1c28a4338
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
-  MGAudioPlayerKit: 8cb129028904baa71cd4f5f2f77abf2a132595c3
+  MGAudioPlayerKit: 979b33378e9b90117cae75eb2a687e2f0821b126
+  MGTemplateKit: 4936ddc393c785a2986d04aa0eff09d66833ed37
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  UIColor_Hex_Swift: bc07fc197421ee896b9ed6dcfa2054b7fbf75145
 
-PODFILE CHECKSUM: dd583bed9df6da1fed749af915a2825b60c2f0d4
+PODFILE CHECKSUM: 8e966f06aff7241cf5a93c55c460b73bb206f4f8
 
 COCOAPODS: 1.6.1

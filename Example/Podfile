@@ -2,5 +2,6 @@ use_frameworks!
 
 target 'MGAudioPlayerKit_Example' do
   pod 'MGAudioPlayerKit', :path => '../'
+  pod 'MGTemplateKit',    :git => 'https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git'
   pod 'SDWebImage'
 end

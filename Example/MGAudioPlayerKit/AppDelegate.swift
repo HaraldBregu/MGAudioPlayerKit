@@ -8,6 +8,9 @@
 
 import UIKit
 import MGAudioPlayerKit
+import MGTemplateKit
+import Firebase
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, MGAudioPlayerControllerDelegate, MGAudioPlayerControllerDataSource {
@@ -17,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MGAudioPlayerControllerDe
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         
+        MGTemplate.configure()
+        FirebaseApp.configure()
+        GADMobileAds.sharedInstance().start { print("Status GADMobileAds: \($0)") }
+
+        let ipad = UIDevice.current.userInterfaceIdiom == .pad
+        
+
         audioPlayerController = MGAudioPlayerListController.instance
         audioPlayerController.delegate = self
         audioPlayerController.dataSource = self
@@ -42,25 +52,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MGAudioPlayerControllerDe
                 playerSubtitle: nil,
                 playerYearPub: nil),
             image: AudioPlayerImage(
-                likeNormal: #imageLiteral(resourceName: "menu") ,
-                likeSelected: #imageLiteral(resourceName: "menu"),
-                likeHighlighted: #imageLiteral(resourceName: "menu"),
-                shareNormal: #imageLiteral(resourceName: "menu"),
-                tableViewCellIcon: #imageLiteral(resourceName: "menu"),
-                play: #imageLiteral(resourceName: "menu"),
-                pause: #imageLiteral(resourceName: "menu"),
-                thumbNormal: #imageLiteral(resourceName: "menu"),
-                thumbSelected: #imageLiteral(resourceName: "menu"),
-                stepForward: #imageLiteral(resourceName: "menu"),
-                stepBackward: #imageLiteral(resourceName: "menu"),
-                shuffleActive: #imageLiteral(resourceName: "menu"),
-                shuffleUnactive: #imageLiteral(resourceName: "menu"),
-                repeatActive: #imageLiteral(resourceName: "menu"),
-                repeatUnactive: #imageLiteral(resourceName: "menu"),
-                heartActive: #imageLiteral(resourceName: "menu"),
-                heartUnactive: #imageLiteral(resourceName: "menu"),
-                option: #imageLiteral(resourceName: "menu"),
-                share: #imageLiteral(resourceName: "menu")),
+                likeNormal: UIImage(icon: .ionicons(.iosHeart), size: CGSize(width: 30, height: 30), textColor: .white),
+                likeSelected: UIImage(icon: .ionicons(.iosHeartOutline), size: CGSize(width: 30, height: 30), textColor: .white),
+                likeHighlighted: UIImage(icon: .ionicons(.iosHeartOutline), size: CGSize(width: 30, height: 30), textColor: .white),
+                tableViewCellIcon: UIImage(icon: .openIconic(.chevronRight), size: CGSize(width: 15, height: 15), textColor: .white),
+                play: UIImage(icon: .openIconic(.mediaPlay), size: CGSize(width: 60, height: 60), textColor: .white),
+                pause: UIImage(icon: .openIconic(.mediaPause), size: CGSize(width: 60, height: 60), textColor: .white),
+                thumbNormal: UIImage(icon: .openIconic(.mediaRecord), size: CGSize(width: 20, height: 20), textColor: .white),
+                thumbSelected: UIImage(icon: .openIconic(.mediaRecord), size: CGSize(width: 30, height: 30), textColor: .white),
+                stepForward: UIImage(icon: .openIconic(.mediaStepForward), size: CGSize(width: 30, height: 30), textColor: .white),
+                stepBackward: UIImage(icon: .openIconic(.mediaStepBackward), size: CGSize(width: 30, height: 30), textColor: .white),
+                shuffleActive: UIImage(icon: .openIconic(.random), size: CGSize(width: 30, height: 30), textColor: .white),
+                shuffleUnactive: UIImage(icon: .openIconic(.random), size: CGSize(width: 30, height: 30), textColor: #colorLiteral(red: 0.9529411765, green: 0.968627451, blue: 0.9725490196, alpha: 0.4026256443)),
+                repeatActive: UIImage(icon: .openIconic(.reload), size: CGSize(width: 30, height: 30), textColor: .white),
+                repeatUnactive: UIImage(icon: .openIconic(.reload), size: CGSize(width: 30, height: 30), textColor: #colorLiteral(red: 0.9529411765, green: 0.968627451, blue: 0.9725490196, alpha: 0.4026256443)),
+                heartActive: UIImage(icon: .openIconic(.heart), size: CGSize(width: 30, height: 30), textColor: .white),
+                heartUnactive: UIImage(icon: .openIconic(.heart), size: CGSize(width: 30, height: 30), textColor: #colorLiteral(red: 0.9529411765, green: 0.968627451, blue: 0.9725490196, alpha: 0.4026256443)),
+                option: UIImage(icon: .openIconic(.ellipses), size: CGSize(width: 30, height: 30), textColor: .white),
+                share: UIImage(icon: .openIconic(.share), size: CGSize(width: 30, height: 30), textColor: .white)),
             color: AudioPlayerColor(
                 navigationBar: .black,
                 navigationBarContent: .white,
@@ -85,7 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MGAudioPlayerControllerDe
                 items: AudioData.items,
                 darkKeyboard: true,
                 bundle: .main,
-                enableAds: true,
+                enableAds: false,
                 adsUnitId: ""))
 
         window?.rootViewController = UINavigationController(rootViewController: audioPlayerController)
@@ -174,7 +183,6 @@ struct AudioPlayerImage: MGAudioPlayerImage {
     var likeNormal: UIImage
     var likeSelected: UIImage
     var likeHighlighted: UIImage
-    var shareNormal: UIImage
     var tableViewCellIcon: UIImage
     var play: UIImage
     var pause: UIImage
